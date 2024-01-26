@@ -10,7 +10,7 @@ APP_TYPE = (
 )
 
 
-class UserPassword(models.Model):
+class UserPasswordManager(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=500)
     application_type = models.CharField(choices=APP_TYPE, max_length=20, default='website')
