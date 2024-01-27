@@ -17,6 +17,6 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
+"Docker kiyin boldi"
 if __name__ == '__main__':
     main()
