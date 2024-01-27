@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'app.apps.AppConfig',
     'account.apps.AccountConfig',
+    'django_filters'
 
 ]
 
@@ -117,9 +118,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-
-
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -129,5 +127,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-    ]
+
+    ],
+
 }
